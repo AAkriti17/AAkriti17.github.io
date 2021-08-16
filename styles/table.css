@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Arizonia&family=Gamja+Flower&family=Major+Mono+Display&family=Patrick+Hand&family=Press+Start+2P&family=Short+Stack&display=swap');
+
+
+.data {
+	margin-top: .5em;
+    margin-right: 2em;
+    
+}
+.data h2 {
+    color: #083358;
+    font-family: 'Aladin', cursive;
+   
+
+}
+
+table {
+    border-collapse: collapse;
+    align-content: center;
+    font-family: 'Short Stack', cursive;
+}
+thead, tfoot {
+	border-top: 2px solid #083358;
+	border-bottom: 2px solid #083358;
+}
+th, td {
+	padding: .2em .7em;
+	text-align: left;
+}
+tfoot th, tfoot td {
+	text-align: right;
+	font-weight: bold;
+}
+.border_bottom {
+	border-bottom: 2px solid #083358;
+}
+.right {
+	text-align: right;
+}
+.center-align{
+    text-align: center;
+}
+.description h3{
+    font-family: 'Aladin', cursive;
+    clear: both;
+    margin-top: 3em;
+    letter-spacing: 2px;
+}

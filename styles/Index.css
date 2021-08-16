@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Prata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Luckiest+Guy|Ubuntu+Mono');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Major+Mono+Display&family=Patrick+Hand&family=Press+Start+2P&family=Short+Stack&family=Gamja+Flower&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color:#f6f6f6;
+}
+body {
+
+    font-size: 100%;
+    width:  100%;
+    margin: 0 auto;
+   
+}
+header {
+	min-height: 10vh;
+	padding: 1.5em 0 2em 0;
+	background-color: #062743;
+	
+	
+}
+header h2 {
+	font-size: 180%;
+	color: #eeeeee;
+	padding-top: 0.25em;
+	font-family: 'Major Mono Display', monospace;
+	font-weight: bold;
+	
+	
+}
+
+header h3 {
+	font-size: 100%;
+	font-family: 'Patrick Hand', cursive;
+	color: #eeeeee;
+	
+}
+
+
+.headerlogo img {
+	float: left;
+	padding: 0 30px;
+	border-radius: 10px;
+	width: auto;
+	
+}
+.shadow {
+	text-shadow: 2px 2px 2px  #eeeeee;
+}
+
+/**Navigation**/
+nav {
+	margin-bottom: 2em;
+	font-family: 'Short Stack', cursive;
+	
+	
+}
+/* The styles for the operation of the 3-tier navigation menu */
+#nav_menu ul {
+	list-style: none;
+	position: relative;    /* So the first submenu can be positioned within the main menu */
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul {
+	display: none;         /* Don't display submenu until hover of the li element */
+	position: absolute;
+	top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#nav_menu ul ul li {
+	float: none;           /* Display the submenus vertically */
+	position: relative;    /* So the second submenu can be positioned within the first submenu */
+}
+#nav_menu ul ul li ul {
+	position: absolute;
+	left: 100%;            /* Position the second submenu at the right side of the li element */ 
+	top: 0;                /* Position the second submenu at the top of the li element */
+}
+#nav_menu ul li.lastitem ul li ul {
+	left: -100%;           /* Position the second submenu at the left side of the li element */ 
+}
+#nav_menu ul li:hover > ul {
+	display: block;        /* Display the submenu on hover of the li element */
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* The styles for the formatting of the 3-tier navigation menu */
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+	background-color:#113a5d;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 176px;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color:#113a5d;
+	color: white;
+	font-weight: bold;
+	
+}
+#nav_menu ul li a.lastitem {
+	width: 178px;               /* So the menu fills the 706px width of the page */
+}
+/* #nav_menu ul li a.current {
+	color: #fc3c3c;
+} */
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: #0e5f76;
+}
+.container{
+	padding: 1px;
+	box-sizing: border-box;
+	min-height: 500px;
+	
+}
+
+.left-col, .right-col{
+	background-color: #f6f6f6;
+	width:20%;
+	float: left;
+	margin-left: 1em;
+	margin-right: 1em;
+	
+	
+}
+.left-col aside {
+	font-family: 'Short Stack', cursive;
+	width: 215px;
+	float: right;
+	padding: 0 0 20px 20px;
+	color:#083358;
+	
+}
+.left-col aside h2 {
+	font-size: 130%;
+	font-family: 'Major Mono Display', monospace;
+	padding: .5em 0 .25em 0;
+}
+
+.left-col aside h3 {
+	
+	font-size: 105%;
+	padding-bottom: .25em;
+	color:#fc3c3c;
+}
+.left-col aside img {
+	/* padding-bottom: 1em; */
+	width: 120px;
+	height: 110px;
+	border: 2px solid #1c819e;
+
+}
+.left-col aside img:hover{
+	border: 2px solid #0e5f76;
+	border-radius: 50%;
+}
+
+.container .left-col{
+	background-color: #f5eee6;
+	box-shadow: 0 0 23px -9px rgba(8,39,67,1);
+	-webkit-box-shadow: 0 0 23px -9px rgba(8,39,67,1);
+	border-radius: 10px;
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+figure {
+	margin-top: .5em;
+	margin-left: 0;
+}
+figcaption {
+	color: #fc3c3c;
+	display: inline-table;
+	padding-top: .25em;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+	border-bottom: 2px solid #fc3c3c;
+}
+
+.center-col{
+	align-items: center;
+	background-color: #f6f6f6;
+	color:#083358;
+	width: 50%;
+	float: left;
+	padding: 0 0.5em;
+}
+.center-col h2{
+	text-align: center;
+	font-size: 160%;
+	font-family: 'Major Mono Display', monospace;
+	padding: .5em 0 .25em 0;
+
+}
+
+.flip-card{
+	/* font-family: 'Gamja Flower', cursive; */
+	margin:50px;
+	font-size: 16px;
+	float: left;
+	position: relative;
+	perspective: 1000px;
+	-webkit-perspective: 1000px;
+	margin-bottom: 165px;
+}
+.flip-card, .flip-card .front, .flip-card .back{
+	width:300px;
+	height: 400px;
+	margin-left: 65px;
+}
+.flip-card .front, .flip-card .back{
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding: 30px;
+	transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	box-shadow: 0 0 23px -9px rgba(252,60,60,1);
+	-webkit-box-shadow: 0 0 23px -9px rgba(252,60,60,1);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+.flip-card .back{
+	z-index: 1;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+
+}
+
+.flip-card:hover .front{
+	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+}
+.flip-card:hover .back{
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+}
+
+.front,.back,button{
+	font-family: 'Short Stack', cursive;
+}
+button{
+	
+	margin-top: 25px;
+	padding: 15px 35px;
+	color: #f6f6f6;
+	letter-spacing: 1px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: none;
+	box-shadow: 0 0 30px rgba(252,60,60,1), 0 0 30px rgba(252,60,60,1);
+	background: #083358;
+	background-image: linear-gradient(0 0, rgba(255,255,255,0.2) 0%,
+	rgba(255,255,255,0.2) 35%,
+	rgba(255,255,255,0.6) 40%,
+	rgba(255,255,255,0)50%,
+	), linear-gradient(to right,#083358 0%,#fcc0c0 100%);
+	background-image: -webkit-linear-gradient(top left, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 35%,	rgba(255,255,255,0.6) 40%,
+	rgba(255,255,255,0) 50%), -webkit-linear-gradient(left,#083358 0% ,#fcc0c0 100%);
+	background-position: -400px -400px, 0 0;
+	background-size: 300% 300%, 100% 100%;
+	 -webkit-background-size:300% 300%, 100% 100%;
+	/*transition: background-position 0s ease;
+	-webkit-transition: backround-position 0s ease; */
+	background-repeat: no-repeat;
+}
+
+button:hover{
+	background-position: 0 0,0 0;
+	transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+}
+
+.content h3{
+	margin: 0;
+	font-size: 28px;
+	width: 100%;
+}
+
+.image-holder{
+	width: 150px;
+	height: 150px;
+	background: url(../images/flipcardimage.jpg) center/cover no-repeat;
+	margin: 0 auto 15px;
+	border-radius: 50%;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+.right-col h2{
+	font-size: 130%;
+	font-family: 'Major Mono Display', monospace;
+	padding: .5em 0 1em 0;
+	color: #083358;
+	font-weight: bold;
+
+}
+
+.right-col li,p{
+	color: #083358;
+	font-family: 'Short Stack', cursive;
+	padding-bottom: 0.5em;
+	font-size: 105%;
+
+}
+.right-col li{
+	color: #fc3c3c;
+	font-weight: bold;
+	
+}
+.description{
+	clear: both;
+}
+
+
+.description h2{
+	padding-bottom: 1em;
+}
+.description p{
+	padding-top: 1em;
+	margin-bottom: 20px;
+	padding-left: 1em;
+	
+}
+
+.description .heroimage{
+	width: 150px;
+	height: 150px;
+	background: url(../images/jejuIsand.jpg) center/cover no-repeat;
+	margin: 0 auto 15px;
+	border-radius: 50%;
+	margin-bottom: 1em;
+}
+@media screen and (max-width: 500px) {
+	.container .left-col, .right-col, .center-col {
+	  float: none;
+	  display: block;
+	  width: 100%;
+	  text-align: left;
+	}
+  }
+.footer-section{
+	clear: both;
+	font:15px 'Do Hyeon', sans-serif;
+	padding: 20px 0;
+	background-color: #fc3c3c;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	color:#083358;
+}
